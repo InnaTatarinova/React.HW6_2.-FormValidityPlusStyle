@@ -1,0 +1,52 @@
+
+
+.Form{
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr) 20px;
+    column-gap: 20px;
+    row-gap: 20px;
+    padding: 50px 150px 30px 150px;
+    grid-template-areas: 
+    "input1 input2 input3"
+    "select textarea textarea"
+    "button button button"
+    "p p p";
+    border: #0e71d4 3px solid;
+    background-color: aqua;
+}
+
+.Form .inputField1, .inputField2, select, button, textarea{
+    border: #0e71d4 3px solid;
+}
+
+
+.inputField1 {
+    grid-area: input1;
+}
+
+.inputField2 {
+    grid-area: input2;
+}
+
+.inputField3 {
+    grid-area: input3;
+}
+
+p {
+    grid-area: p;
+}
+
+.Select {
+    grid-area: select;
+}
+
+.Textarea{
+    grid-area: textarea;
+}
+
+.Button {
+    grid-area: button;
+    background-color: rgb(4, 145, 145);
+}
